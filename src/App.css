@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #282c34;
+  color: #fff;
+  padding: 30px 100px;
+}
+
+.container {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-form {
+  margin: 20px 0;
+}
+
+.todo-form div {
+  display: flex;
+}
+
+.todo-input {
+  width: 100%;
+}
+input {
+  border: none;
+  border-radius: 5px;
+  line-height: 25px;
+  padding-left: 5px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  line-height: 25px;
+  margin-left: 5px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.todo-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 0px;
+  border-bottom: 1px solid #fff;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+@media only screen and (max-width: 599px) {
+  .container {
+    width: 80vw;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    width: 60vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 30vw;
+  }
+}
